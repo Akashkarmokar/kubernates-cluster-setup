@@ -13,4 +13,5 @@ spec:
 
 
 # Commands
-# kubectl apply -f KindCluster/pod.yml
+# kubectl apply -f KindCluster/pod.yml    -> To create Pods
+# kubectl exec -it pod/[pod_name] -n [namespace_name] -- bash  -> To access the Pod and get into the pod

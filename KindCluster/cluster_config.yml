@@ -20,4 +20,9 @@ nodes:
       hostPort: 8081
       protocol: TCP
 
+
+
+# Command to Create kind cluster
+# kind create cluster [cluster_name] --config=[config_file_name]
+
     

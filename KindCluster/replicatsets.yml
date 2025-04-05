@@ -1,8 +1,8 @@
-kind: Deployment
+kind: ReplicaSet
 apiVersion: apps/v1
 
 metadata:
-  name: nginx-deployment
+  name: nginx-replicaset
   namespace: custom-ns-nginx
   
 spec:
@@ -13,7 +13,7 @@ spec:
     
   template:
     metadata:
-      name: nginx-pod-by-deployment
+      name: nginx-pod-by-replicaset
       labels:
         app: nginx-pod
     spec:
@@ -25,9 +25,5 @@ spec:
 
 
 
-# Commands
 
-# Rolling Update
-# kubectl set image deployment/nginx-deployment -n [namepace_name] nginx-container=nginx:1.19.0
 
-# kubctl scale deployment/nginx-deployment -n [namepace_name] --replicas=3
